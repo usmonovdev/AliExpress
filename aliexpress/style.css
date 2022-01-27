@@ -1,0 +1,896 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.tepaMenyu{
+    width: 100vw;
+    height: 40px;
+    background: #f2f2f2;
+}
+
+.birinchiDropdown{
+    color: rgb(71, 71, 71);
+    position: relative;
+    left: 40%;
+    font-size: 12px;
+    cursor: pointer;
+    display: inline;
+}
+
+.dropPBir{
+    color: rgb(71, 71, 71);
+    font-size: 12px;
+    padding: 10px;
+    margin: 0px !important;
+    display: inline;
+    position: relative;
+    top: 5px;
+}
+
+.birinchiDropdown:hover .birinchiDropdownOchil{
+    position: absolute;
+    display: inline;
+    background: #fff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.123);
+}
+
+.birinchiDropdownOchil{
+    width: 200px;
+    position: relative;
+    top: 30px;
+    left: 0px;
+    display: none;
+    z-index: 900;
+}
+
+.dropP{
+    width: 90%;
+    height: 40px;
+    border: 1px solid rgb(71, 71, 71);
+    color: rgb(71, 71, 71);
+    line-height: 40px;
+    padding-left: 6px;
+    margin: 10px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.dropP:hover{
+    background: rgba(128, 128, 128, 0.185);
+}
+
+.dropPBir:hover{
+    color: #E62E04;
+    font-size: 12px;
+    margin: 8px;
+}
+
+.birinchiChiziq{
+    height: 20px;
+    width: 2px;
+    background: rgb(207, 207, 207);
+    position: absolute;
+    top: 10px;
+    left: 48%;
+}
+
+.ikkinchiDropdown{
+    color: rgb(71, 71, 71);
+    position: relative;
+    top: 0px;
+    left: 40.7%;
+    font-size: 12px;
+    cursor: pointer;
+    display: inline;
+}
+
+.ikkinchiDropdownOchil{
+    width: 200px;
+    position: relative;
+    top: 30px;
+    left: 0px;
+    display: none;
+    z-index: 900;
+}
+
+.ikkinchiDropdown:hover .ikkinchiDropdownOchil{
+    position: absolute;
+    display: inline;
+    background: #fff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.123);
+}
+
+.buyer{
+    font-size: 12px;
+    color: rgb(71, 71, 71);
+    position: relative;
+    top: 6px;
+    left: 41.5%;
+    display: inline;
+    cursor: pointer;
+}
+
+.buyer:hover{
+    color: #E62E04;
+}
+
+.app{
+    font-size: 12px;
+    color: rgb(71, 71, 71);
+    position: relative;
+    display: inline;
+    top: 6px;
+    left: 43%;
+    cursor: pointer;
+}
+
+.app:hover{
+    color: #E62E04;
+}
+
+.ikkinchiChiziq{
+    height: 20px;
+    width: 2px;
+    background: rgb(207, 207, 207);
+    position: absolute;
+    left: 63%;
+    top: 10px;
+}
+
+.uchinchiDropdown{
+    position: relative;
+    top: 5px;
+    left: 45.5%;
+    color: rgb(71, 71, 71);
+    font-size: 12px;
+    cursor: pointer;
+    display: inline;
+}
+
+.uchinchiDropdown:hover .uchinchiDropdownOchil{
+    display: inline;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.123);
+}
+
+.bayrog{
+    width: 2%;
+    position: relative;
+    display: inline;
+}
+
+.dropPIkki{
+    display: inline;
+    position: relative;
+    top: 1px;
+    left: 5px;
+}
+
+.uchinchiDropdownOchil{
+    width: 280px;
+    height: 320px;
+    color: rgb(71, 71, 71);
+    position: absolute;
+    top: 22px;
+    left: -10%;
+    font-size: 12px;
+    display: none;
+    background: #fff;
+    cursor: default;
+    z-index: 900;
+}
+.dropPUch{
+    position: absolute;
+    display: inline;
+}
+
+.rasmDavl, .ship, .shipBayrog, .shipDavlat, .tilLang, .tilIchki, .tilEng, .currency, .currensySom, .currencyNomi{
+    display: block;
+    position: relative;
+}
+
+.rasmDavl{
+    width: 92%;
+    height: 40px;
+    top: 0px;
+    left: 10px;
+    border: 1px solid rgb(71, 71, 71);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.shipBayrog{
+    width: 10%;
+    top: 12px;
+    left: 10px;
+}
+
+.ship{
+    font-size: 12px;
+    font-weight: bold;
+    top: 10px;
+    left: 10px;
+    color: #000000;
+}
+
+.shipDavlat{
+    left: 40px;
+    top: -4px;
+}
+
+.shipDavlat:hover{
+    color: #E62E04;
+}
+
+.tilIchki{
+    font-size: 12px;
+    font-weight: bold;
+    top: 20px;
+    left: 10px;
+    color: #000000;
+}
+
+.tilLang{
+    width: 92%;
+    height: 40px;
+    top: 10px;
+    left: 10px;
+    border: 1px solid rgb(71, 71, 71);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tilEng{
+    top: 10px;
+    left: 10px;
+}
+
+.tilEng:hover{
+    color: #E62E04;
+}
+
+.currensySom{
+    font-size: 12px;
+    font-weight: bold;
+    top: 30px;
+    left: 10px;
+    color: #000000;
+}
+
+.currency{
+    width: 92%;
+    height: 40px;
+    top: 20px;
+    left: 10px;
+    border: 1px solid rgb(71, 71, 71);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.currencyNomi{
+    top: 10px;
+    left: 10px;
+}
+
+.currencyNomi:hover{
+    color: #E62E04;
+}
+
+.saveTugma{
+    width: 92%;
+    height: 40px;
+    background: #E62E04;
+    position: relative;
+    left: 10px;
+    top: 45px;
+    color: #fff;
+    line-height: 38px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.saveTugma::before{
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 110px;
+    background: rgb(26, 190, 97);
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(0);
+    transition: .6s;
+}
+
+.saveTugma:hover::before{
+    transform: scale(10);
+}
+
+.uchinchiChiziq{
+    height: 20px;
+    width: 2px;
+    background: rgb(207, 207, 207);
+    position: absolute;
+    left: 74%;
+    top: 10px;
+}
+
+.heartIcon{
+    color: #666666;
+    position: relative;
+    top: 8px;
+    left: 49%;
+    cursor: pointer;
+}
+
+.heartIcon:hover{
+    color: #E62E04;
+}
+
+.wishList{
+    color: #666666;
+    font-size: 12px;
+    position: relative;
+    display: inline;
+    left: 49.2%;
+    top: 6px;
+}
+
+.userIcon{
+    color: #666666;
+    display: inline;
+    position: relative;
+    left: 1%;
+    top: 6px;
+    cursor: pointer;
+}
+
+.tortinchiDropdown{
+    position: absolute;
+    display: inline;
+    left: 82%;
+}
+
+.accountUser{
+    font-size: 13px;
+    color: #666666;
+    display: inline;
+    position: relative;
+    left: 4px;
+    top: 6px;
+    cursor: pointer;
+}
+
+.accountUser:hover{
+    color: #E62E04;
+}
+
+.tortinchiDropdownOchil{
+    width: 250px;
+    height: 400px;
+    position: relative;
+    left: -10px;
+    top: 10px;
+    background: #fff;
+    display: none;
+    z-index: 900;
+}
+
+.tortinchiDropdown:hover .tortinchiDropdownOchil{
+    display: block;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.123);
+}
+
+.welocmeAli{
+    color: #666666;
+    position: relative;
+    top: 15px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.tugmaJoin{
+    width: 105px;
+    height: 40px;
+    background: #E62E04;
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    line-height: 40px;
+    left: 10px;
+    top: 50px;
+    border-radius: 5px;
+    font-weight: bold;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tugmaJoin::before{
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 35px;
+    background: rgb(26, 190, 97);
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(0);
+    transition: .4s;
+}
+
+.tugmaJoin:hover::before{
+    transform: scale(4);
+}
+
+.tugmaSign{
+    width: 105px;
+    height: 40px;
+    background: #e62d0441;
+    color: #E62E04;
+    position: relative;
+    text-align: center;
+    line-height: 40px;
+    left: 130px;
+    top: 13px;
+    border-radius: 5px;
+    font-weight: bold;
+    z-index: 1;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.tugmaSign::before{
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 35px;
+    background: rgb(26, 190, 97);
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(0);
+    transition: .4s;
+}
+
+.tugmaSign:hover::before{
+    transform: scale(4);
+}
+
+.tugmaSign:hover{
+    color: #fafafa;
+}
+
+.torChiziq{
+    width: 100%;
+    height: 0.9px;
+    background: #666666;
+    position: relative;
+    top: 30px;
+    display: block;
+}
+
+.torAccP{
+    width: 90%;
+    height: 40px;
+    border: 1px solid rgb(71, 71, 71);
+    color: #666666;
+    font-size: 12px;
+    position: relative;
+    top: 40px;
+    left: 8px;
+    padding: 10px;
+    cursor: pointer;
+    margin: 4px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.torAccP:hover{
+    background: #E8E8E8;
+}
+
+
+/* Navbar */
+.pastkiMenyu{
+    width: 100%;
+    height: 96px;
+    position: absolute;
+    top: 40px;
+    background: rgb(255, 255, 255);
+}
+
+.logoAli{
+    font-size: 32px;
+    color: #E62E04;
+    font-weight: bold;
+    display: inline;
+    position: relative;
+    top: 15px;
+    left: 200px;
+}
+
+.logoShior{
+    font-size: 12px;
+    color: rgb(145, 145, 145);
+    display: inline;
+    position: relative;
+    top: 40px;
+    left: 24px;
+}
+
+.searchBorder{
+    width: 400px;
+    height: 35px;
+    display: inline;
+    position: relative;
+    left: 100px;
+    border: 2px solid #E62E04;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    outline: none;
+    padding-left: 10px;
+    top: 10px;
+    font-size: 14px;
+    color: rgb(32, 32, 32);
+}
+
+::placeholder{
+    font-size: 12px;
+}
+
+.srcPasti{
+    color: grey;
+    font-size: 12px;
+    position: relative;
+    display: inline;
+    top: 40px;
+    left: -330px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.srcPasti:hover{
+    color: #E62E04;
+}
+
+.chiziqBesh{
+    height: 15px;
+    width: 1px;
+    background: rgb(197, 197, 197);
+    position: absolute;
+    top: 65px;
+    left: 550px;
+}
+
+.chiziqBesh2{
+    height: 15px;
+    width: 1px;
+    background: rgb(197, 197, 197);
+    position: absolute;
+    top: 65px;
+    left: 700px;
+}
+
+.chiziqBesh3{
+    height: 15px;
+    width: 1px;
+    background: rgb(197, 197, 197);
+    position: absolute;
+    top: 65px;
+    left: 802px;
+}
+
+.beshinchiDropdown{
+    width: 0px;
+    height: 0px;
+    position: relative;
+    top: -25px;
+    left: 850px;
+}
+
+.dropPAll{
+    width: 100px;
+    height: 34.5px;
+    background: rgb(241, 100, 68);
+    color: #fff;
+    font-size: 14px;
+    position: relative;
+    line-height: 34px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.beshinchiDropdownOchil{
+    width: 220px;
+    max-height: 300px;
+    overflow-y: scroll;
+    background: #fff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.397);
+    position: relative;
+    top: -20px;
+    display: none;
+    z-index: 200;
+}
+
+.beshinchiDropdown:hover .beshinchiDropdownOchil{
+    display: block;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+
+::-webkit-scrollbar-track{
+    background: rgb(184, 184, 184);
+}
+
+::-webkit-scrollbar-thumb{
+    background: #E62E04;
+}
+
+.dropPCategories{
+    width: 90%;
+    height: 40px;
+    border: 1px solid rgb(71, 71, 71);
+    position: relative;
+    font-size: 14px;
+    left: 5%;
+    top: 10px;
+    cursor: pointer;
+    line-height: 40px;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+
+.dropPCategories:hover{
+    background: #E8E8E8;
+}
+
+.beshPastkiBlur{
+    width: 220px;
+    height: 30px;
+    position: fixed;
+    bottom: 340px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.493), transparent);
+    z-index: 20;
+}
+
+.iconPoisk{
+    width: 35px;
+    height: 34.6px;
+    background: #E62E04;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 950px;
+    top: -25px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    z-index: 1;
+}
+
+.fa-shopping-bag{
+    font-size: 2em;
+    position: relative;
+    left: 1040px;
+    top: -60px;
+    color: #666666;
+    cursor: pointer;
+}
+
+.fa-shopping-bag:hover{
+    color: #E62E04;
+}
+
+.fa-circle{
+    font-size: 10px;
+    position: relative;
+    left: 1030px;
+    top: -80px;
+    color: #E62E04;
+    cursor: pointer;
+}
+
+#rasmSlider{
+    position: relative;
+    margin-top: 10px;
+}
+
+.sliderRasm{
+    height: 540px;
+    background: #fff;
+    position: relative;
+    top: 130px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.11);
+}
+
+#ikkinchiContainer{
+    width: 100%;
+    height: 315px;
+    background: #fff;
+    position: relative;
+    top: 180px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.11);
+    margin-bottom: 250px;
+}
+
+.ikkiTop{
+    color: #000000;
+    width: 140px !important;
+    height: 40px;
+    background: #E8E8E8;
+    margin: 10px !important;
+    line-height: 40px;
+    text-align: center;
+}
+
+.ikkiQatorRasm{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.rasmExam{
+    transition: 300ms;
+}
+
+.rasmExam:hover{
+    transform: scale(1.2);
+}
+
+/* Uchinchi qator */
+.uchinchiMore{
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.11);
+}
+
+.ikkiMore{
+    color: #000000;
+    width: 140px !important;
+    height: 40px;
+    background: #E8E8E8;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    margin-left: 0px !important;
+    line-height: 40px;
+    text-align: center;
+}
+
+.uchinchiContainer{
+    margin-bottom: 30px;
+}
+
+.tortinchiContainer{
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+.uchinchiRow{
+    background: #fff;
+    padding-bottom: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.11);
+}
+
+.tortinchiRow{
+    background: #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.11);
+}
+
+.uchColNomi{
+    font-size: 12px;
+    margin: 0 !important;
+}
+
+.uchColNarxi{
+    padding-top: 5px !important;    
+    padding-bottom: 0px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin: 0 !important;
+    font-weight: 600;
+    font-size: 22px !important;
+}
+
+.uchChiziqFoiz{
+    margin-top: 20px;
+    width: 1px;
+    height: 20px;
+    background: #666666;
+    position: absolute;
+}
+
+.uchFoiz{
+    color: #E62E04;
+    font-size: 12px;
+    display: inline;
+    position: relative;
+    top: 16px;
+    left: 10px;
+}
+
+.uchChiziqYulduz{
+    margin-top: 50px;
+    width: 1px;
+    height: 20px;
+    background: #666666;
+    position: absolute;
+    left: 16px;
+}
+
+.fa-star{
+    color: #E62E04;
+    position: relative;
+    top: 23px;
+    left: 10px;
+    font-size: 14px;
+}
+
+.uchYulduzSoni{
+    display: inline;
+    position: absolute;
+    font-size: 12px;
+    top: 306px;
+    left: 50px;
+}
+
+.torYulduzSoni{
+    display: inline;
+    position: absolute;
+    font-size: 12px;
+    top: 355px;
+    left: 50px;
+}
+
+.uchRowRasm{
+    transition: 200ms;
+}
+
+.uchRowRasm:hover{
+    transform: scale(1.12);
+}
+
+footer{
+    width: 100%;
+    height: 330px;
+    position: relative;
+    bottom: 0px;
+    background: #666666;
+}
+
+.footerHelp{
+    color: #fff;
+    margin-top: 30px;
+}
+
+.footerHelpPastki{
+    color: rgb(168, 168, 168);
+}
+
+.footerHelpPastki:hover{
+    color: #fdb26b;
+}
+
+.download{
+    margin-top: 10px;
+    width: 100%;
+}
+
+::selection{
+    background-color: #e62d042f;
+}
